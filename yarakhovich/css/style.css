@@ -1,0 +1,97 @@
+.wrapper {
+  border-width: 0px;
+  border-style: solid;
+  border-color: black;
+  width: 437px;
+  padding: 8px 1px 2px 8px;
+  font-family: "Arial Narrow", sans-serif;
+}
+
+h2 {
+  color: #94b767;
+  font-size: 20px;
+  padding-left: 7px;
+  padding-right: 13px;
+}
+
+p {
+  line-height: 1.15;
+  letter-spacing: 0.6px;
+}
+
+.bl {
+  background-image: url("../../images/yarakhovich.gif");
+  background-repeat: repeat-y;
+}
+
+.bl p {
+  font-size: 14px;
+  padding-left: 5px;
+  padding-right: 10px;
+}
+
+.verh {
+  padding-top: 2px;
+  height: 24px;
+  background-image: url("../../images/verh.gif");
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+
+.b2,
+.b3 {
+  /* 11 + 5 */
+  text-indent: 16%;
+}
+
+.b2:nth-last-child(2) {
+    margin-bottom: 5px;
+}
+
+.b3 {
+  position: relative;
+  padding-bottom: 14px;
+}
+
+.b3::after {
+  content: "";
+  position: absolute;
+
+  /* Растягиваем плашку по нижнему краю текста */
+  left: 0px;
+  bottom: -4px;
+  bottom: 0;
+  width: 100%;
+
+  /* Задаем высоту картинки niz.gif */
+  height: 34px;
+
+  background-image: url("../../images/niz.gif");
+  background-repeat: no-repeat;
+
+  background-position: 0px 0;
+
+  /* Прячем фон за текст, чтобы буквы печатались ПОВЕРХ скругления */
+  z-index: 1;
+}
+
+.b3 span {
+  position: relative;
+  z-index: 3;
+}
+
+.b3 {
+  position: relative;
+  padding-bottom: 14px;
+}
+
+.visually_hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
