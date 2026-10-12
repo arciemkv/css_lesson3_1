@@ -1,0 +1,13 @@
+.bl {
+    width: 424px;
+    background: url(../../../images/kuznetsov.gif) repeat-y left top;
+}
+
+h2 {
+    margin: 0 0 17px 0;
+    padding: 5px 0 0 7px;
+    background: url(../../../images/verh.gif) no-repeat left top;
+    font-family: "Arial Narrow", Arial, sans-serif;
+    font-size: 1.2em;
+    color: #94b767;
+}
